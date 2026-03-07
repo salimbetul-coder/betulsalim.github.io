@@ -77,7 +77,7 @@ Operational analytics system designed to track insurance process metrics and wor
 
 ## Monthly Power of Attorney Report
 
-<img src="images/aylik-vekalet.png" width="900">
+<img src="images/aylık-vekalet.png" width="900">
 
 Provides operational insights for power-of-attorney workflows across field and office teams.
 
@@ -99,8 +99,8 @@ Tracks field investigation metrics and operational workflow status across legal 
 ## Field Usage Analyzer
 
 <img src="images/FieldKullanım rapor.png" width="900">
-<img src="images/fieldKullanımrapor1.png" width="900">
-<img src="images/fieldKullanımrapor3.png" width="900">
+<img src="images/fieldkullanımrapor1.png" width="900">
+<img src="images/fieldkullanumrapor3.png" width="900">
 
 
 A database analysis tool designed to evaluate field usage across application models.
