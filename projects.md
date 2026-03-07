@@ -36,7 +36,7 @@ Key capabilities include:
 ## Daily Operations Dashboard
 
 <img src="images/günlükrapor.png" width="900">
-<img src="images/gunlukrapor veri1.png" width="900">
+
 
 This dashboard provides a daily overview of operational workflows and case progress across the system.
 
@@ -46,6 +46,7 @@ This dashboard provides a daily overview of operational workflows and case progr
 ## General Operational Report
 
 <img src="images/gunlukgenel.png" width="900">
+<img src="images/gunlukrapor veri1.png" width="900">
 
 
 Aggregated operational statistics and workflow metrics used by management teams for monitoring daily system activity.
