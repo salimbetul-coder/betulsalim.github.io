@@ -36,6 +36,7 @@ Key capabilities include:
 ## Daily Operations Dashboard
 
 <img src="images/günlükrapor.png" width="900">
+<img src="images/gunlukrapor veri1.png" width="900">
 
 This dashboard provides a daily overview of operational workflows and case progress across the system.
 
@@ -45,6 +46,7 @@ This dashboard provides a daily overview of operational workflows and case progr
 ## General Operational Report
 
 <img src="images/gunlukgenel.png" width="900">
+
 
 Aggregated operational statistics and workflow metrics used by management teams for monitoring daily system activity.
 
@@ -83,7 +85,7 @@ Provides operational insights for power-of-attorney workflows across field and o
 
 ## Field Investigation Analytics
 
-<img src="images/sahaibyuzdekeyit.png" width="900">
+<img src="images/sahaiabyuzdekayit.png" width="900">
 
 Tracks field investigation metrics and operational workflow status across legal case processes.
 
@@ -96,6 +98,9 @@ Tracks field investigation metrics and operational workflow status across legal 
 ## Field Usage Analyzer
 
 <img src="images/FieldKullanım rapor.png" width="900">
+<img src="images/fieldKullanımrapor1.png" width="900">
+<img src="images/fieldKullanımrapor3.png" width="900">
+
 
 A database analysis tool designed to evaluate field usage across application models.
 
@@ -124,7 +129,7 @@ Tracks missing documents within operational case workflows.
 
 ## Field Technician Report
 
-<img src="images/sahacitamirci.png" width="900">
+<img src="images/sahacıtamirci.png" width="900">
 
 Monitors technician workflow and case processing status.
 
