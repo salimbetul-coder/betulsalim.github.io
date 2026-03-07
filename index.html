@@ -507,6 +507,47 @@
     .gallery-card .image-grid {
   position: relative;
 }
+
+    .contact-card {
+  padding: 30px;
+}
+
+.contact-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+.contact-item {
+  background: rgba(255,255,255,0.04);
+  border: 1px solid var(--line);
+  border-radius: 16px;
+  padding: 20px;
+}
+
+.contact-title {
+  font-size: 0.85rem;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--muted);
+  margin-bottom: 6px;
+}
+
+.contact-item a {
+  font-size: 1.05rem;
+  font-weight: 600;
+  color: #dfe6ff;
+}
+
+.contact-item a:hover {
+  color: var(--primary);
+}
+
+    @media (max-width: 900px) {
+  .contact-grid {
+    grid-template-columns: 1fr;
+  }
+}
      
     }
   </style>
@@ -516,11 +557,12 @@
     <div class="container nav-inner">
       <div class="brand">Betül <span>Salim</span></div>
       <div class="nav-links">
-        <a href="#about">About</a>
-        <a href="#projects">Projects</a>
-        <a href="#dashboards">Dashboards</a>
-        <a href="#architecture">Architecture</a>
-      </div>
+  <a href="#about">About</a>
+  <a href="#projects">Projects</a>
+  <a href="#dashboards">Dashboards</a>
+  <a href="#architecture">Architecture</a>
+  <a href="#contact">Contact</a>
+</div>
     </div>
   </nav>
 
@@ -805,6 +847,45 @@
         </div>
       </div>
     </section>
+
+    <section id="contact">
+  <div class="section-head">
+    <div>
+      <h2>Contact</h2>
+      <p>
+        If you would like to collaborate, discuss engineering problems, or learn more about my work,
+        feel free to reach out.
+      </p>
+    </div>
+  </div>
+
+  <div class="card section-card contact-card">
+    
+    <div class="contact-grid">
+
+      <div class="contact-item">
+        <div class="contact-title">Email</div>
+        <a href="mailto:betulsalim6@gmail.com">betulsalim6@gmail.com</a>
+      </div>
+
+      <div class="contact-item">
+        <div class="contact-title">LinkedIn</div>
+        <a href="https://www.linkedin.com/in/betulsalim-" target="_blank">
+          linkedin.com/in/betulsalim-
+        </a>
+      </div>
+
+      <div class="contact-item">
+        <div class="contact-title">GitHub</div>
+        <a href="https://github.com/betulsalim" target="_blank">
+          github.com/betulsalim
+        </a>
+      </div>
+
+    </div>
+
+  </div>
+</section>
 
     <div class="footer">
       © 2026 Betül Salim — Backend & Product Data Engineering Portfolio
