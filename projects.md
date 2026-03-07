@@ -1,54 +1,151 @@
-# Projects
+# Engineering Portfolio
 
-## Insurance Operations Reporting Platform
+This portfolio showcases backend systems, operational analytics platforms, and enterprise reporting tools that I designed and implemented.
 
-Enterprise reporting system designed for legal and insurance operations.
+My focus areas include:
 
-Features:
+- Backend architecture
+- Operational analytics
+- Product data reporting
+- Workflow monitoring systems
 
-- Operational dashboards
-- KPI reporting
-- Case workflow tracking
-- Excel exports
-- Performance analytics
 
-Technologies
+---
 
-- Django
-- PostgreSQL
-- REST APIs
-- React / Templates
+# Insurance & Legal Operations Analytics Platform
+
+I designed and implemented a large-scale reporting and analytics system for insurance and legal operations workflows.
+
+The platform transforms operational processes into measurable KPIs and performance dashboards used by operational teams.
+
+Key capabilities include:
+
+- operational workflow monitoring
+- performance dashboards
+- KPI aggregation
+- case tracking analytics
+- Excel export pipelines
+- data quality analysis
+
+
+---
+
+# Operational Reporting Dashboards
+
+
+## Daily Operations Dashboard
+
+<img src="images/gunlukrapor.png" width="900">
+
+This dashboard provides a daily overview of operational workflows and case progress across the system.
+
+
+---
+
+## General Operational Report
+
+<img src="images/gunlukgenel.png" width="900">
+
+Aggregated operational statistics and workflow metrics used by management teams for monitoring daily system activity.
+
+
+---
+
+## Field Personnel Performance
+
+<img src="images/sahapersoneliustaaylik.png" width="900">
+
+Tracks performance metrics of field personnel and operational teams including workload distribution and case progress.
+
+
+---
+
+## Insurance Operations Monitoring
+
+<img src="images/hasarlinkops.png" width="900">
+
+Operational analytics system designed to track insurance process metrics and workflow activity.
+
+
+---
+
+# Legal Workflow Analytics
+
+
+## Monthly Power of Attorney Report
+
+<img src="images/aylik-vekalet.png" width="900">
+
+Provides operational insights for power-of-attorney workflows across field and office teams.
+
+
+---
+
+## Field Investigation Analytics
+
+<img src="images/sahaibyuzdekeyit.png" width="900">
+
+Tracks field investigation metrics and operational workflow status across legal case processes.
+
+
+---
+
+# Data Quality & Database Analysis Tools
 
 
 ## Field Usage Analyzer
 
-A system designed to analyze database field usage across applications.
+<img src="images/FieldKullanım rapor.png" width="900">
 
-Purpose:
+A database analysis tool designed to evaluate field usage across application models.
 
-- detect unused database fields
-- improve database schema design
-- provide data quality insights
+The system identifies:
 
-Technologies
+- unused database fields
+- low usage attributes
+- schema optimization opportunities
 
-- Django ORM
-- PostgreSQL
-- Python analysis scripts
+This helps improve database design and system performance.
 
 
-## Smart POS System
+---
 
-Full-stack POS system designed with clean architecture.
+# Case Workflow Monitoring
 
-Features:
 
-- inventory management
-- RBAC authorization
-- reporting dashboards
+## Missing Document Tracking
 
-Technologies
+<img src="images/eksikevrak.png" width="900">
 
-- C#
-- .NET
-- SQL Server
+Tracks missing documents within operational case workflows.
+
+
+---
+
+## Field Technician Report
+
+<img src="images/sahacitamirci.png" width="900">
+
+Monitors technician workflow and case processing status.
+
+
+---
+
+# System Architecture
+
+Typical architecture used in these systems:
+
+Frontend  
+React / Django templates
+
+Backend  
+Django REST APIs
+
+Database  
+PostgreSQL
+
+Analytics Layer  
+SQL aggregation queries
+
+Export Layer  
+Excel reporting pipelines
