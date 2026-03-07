@@ -401,6 +401,33 @@
       .image-grid {
         padding: 0 20px 20px;
       }
+
+      #lightbox {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(0,0,0,0.85);
+      display: none;
+      align-items: center;
+      justify-content: center;
+      z-index: 9999;
+      padding: 40px;
+    }
+
+    #lightbox img {
+      max-width: 95%;
+      max-height: 95%;
+      border-radius: 14px;
+      box-shadow: 0 30px 60px rgba(0,0,0,0.6);
+      animation: zoomIn .2s ease;
+    }
+
+    @keyframes zoomIn {
+      from { transform: scale(0.9); opacity:0; }
+      to { transform: scale(1); opacity:1; }
+    }
      
     }
   </style>
@@ -558,7 +585,7 @@
             </p>
           </div>
           <div class="image-grid">
-            <img class="portfolio-image" src="images/günlükrapor.png" alt="Daily Operations Dashboard">
+            <img class="portfolio-image" src="images/günlükrapor.png" alt="Daily Operations Dashboard" onclick="openLightbox(this.src)">
           </div>
         </article>
 
@@ -570,8 +597,8 @@
             </p>
           </div>
           <div class="image-grid two">
-            <img class="portfolio-image" src="images/gunlukgenel.png" alt="General Operational Report">
-            <img class="portfolio-image" src="images/gunlukrapor veri1.png" alt="General Operational Report Detail">
+            <img class="portfolio-image" src="images/gunlukgenel.png" alt="General Operational Report" onclick="openLightbox(this.src)">
+            <img class="portfolio-image" src="images/gunlukrapor veri1.png" alt="General Operational Report Detail" onclick="openLightbox(this.src)">
           </div>
         </article>
 
@@ -583,7 +610,7 @@
             </p>
           </div>
           <div class="image-grid">
-            <img class="portfolio-image" src="images/sahapersoneliustaaylık.png" alt="Field Personnel Performance Dashboard">
+            <img class="portfolio-image" src="images/sahapersoneliustaaylık.png" alt="Field Personnel Performance Dashboard" onclick="openLightbox(this.src)">
           </div>
         </article>
 
@@ -595,7 +622,7 @@
             </p>
           </div>
           <div class="image-grid">
-            <img class="portfolio-image" src="images/hasarlinkops.png" alt="Insurance Operations Monitoring">
+            <img class="portfolio-image" src="images/hasarlinkops.png" alt="Insurance Operations Monitoring" onclick="openLightbox(this.src)">
           </div>
         </article>
 
@@ -607,7 +634,7 @@
             </p>
           </div>
           <div class="image-grid">
-            <img class="portfolio-image" src="images/aylık-vekalet.png" alt="Monthly Power of Attorney Report">
+            <img class="portfolio-image" src="images/aylık-vekalet.png" alt="Monthly Power of Attorney Report" onclick="openLightbox(this.src)">
           </div>
         </article>
 
@@ -619,7 +646,7 @@
             </p>
           </div>
           <div class="image-grid">
-            <img class="portfolio-image" src="images/sahaiabyuzdekayit.png" alt="Field Investigation Analytics">
+            <img class="portfolio-image" src="images/sahaiabyuzdekayit.png" alt="Field Investigation Analytics" onclick="openLightbox(this.src)">
           </div>
         </article>
 
@@ -632,9 +659,9 @@
             </p>
           </div>
           <div class="image-grid two">
-            <img class="portfolio-image" src="images/FieldKullanım rapor.png" alt="Field Usage Analyzer Overview">
-            <img class="portfolio-image" src="images/fieldkullanımrapor1.png" alt="Field Usage Analyzer Detail 1">
-            <img class="portfolio-image" src="images/fieldkullanumrapor3.png" alt="Field Usage Analyzer Detail 2">
+            <img class="portfolio-image" src="images/FieldKullanım rapor.png" alt="Field Usage Analyzer Overview" onclick="openLightbox(this.src)">
+            <img class="portfolio-image" src="images/fieldkullanımrapor1.png" alt="Field Usage Analyzer Detail 1" onclick="openLightbox(this.src)">
+            <img class="portfolio-image" src="images/fieldkullanumrapor3.png" alt="Field Usage Analyzer Detail 2" onclick="openLightbox(this.src)">
           </div>
         </article>
 
@@ -646,7 +673,7 @@
             </p>
           </div>
           <div class="image-grid">
-            <img class="portfolio-image" src="images/eksikevrak.png" alt="Missing Document Tracking">
+            <img class="portfolio-image" src="images/eksikevrak.png" alt="Missing Document Tracking" onclick="openLightbox(this.src)">
           </div>
         </article>
 
@@ -658,7 +685,7 @@
             </p>
           </div>
           <div class="image-grid">
-            <img class="portfolio-image" src="images/sahacıtamirci.png" alt="Field Technician Report">
+            <img class="portfolio-image" src="images/sahacıtamirci.png" alt="Field Technician Report" onclick="openLightbox(this.src)">
           </div>
         </article>
       </div>
@@ -704,5 +731,20 @@
       © 2026 Betül Salim — Backend & Product Data Engineering Portfolio
     </div>
   </main>
+  <div id="lightbox" onclick="closeLightbox()">
+    <img id="lightbox-img">
+  </div>
+  <script>
+    function openLightbox(src) {
+      const box = document.getElementById("lightbox");
+      const img = document.getElementById("lightbox-img");
+      img.src = src;
+      box.style.display = "flex";
+    }
+
+    function closeLightbox() {
+      document.getElementById("lightbox").style.display = "none";
+    }
+</script>
 </body>
 </html>
