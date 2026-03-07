@@ -53,7 +53,7 @@ Aggregated operational statistics and workflow metrics used by management teams 
 
 ## Field Personnel Performance
 
-<img src="images/sahapersoneliustaaylik.png" width="900">
+<img src="images/sahapersoneliustaaylık.png" width="900">
 
 Tracks performance metrics of field personnel and operational teams including workload distribution and case progress.
 
