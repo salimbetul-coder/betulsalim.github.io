@@ -16,3 +16,7 @@ Personal portfolio focused on requirements, Agile delivery, stakeholder coordina
 Run `python3 -m http.server 8000` from this directory and open `http://localhost:8000`.
 
 Content reflects the supplied September 2026 CV. Employment titles are preserved. Project summaries describe contributions without publishing internal documents or customer records. No new certifications, job titles, team sizes or budget ownership are asserted.
+
+## PM artifact pack
+
+`artifacts/index.html` contains a printable worked-example pack: charter, RACI, RAID and weekly status. Each document also has a Markdown download. The pack is explicitly illustrative: proposed pilot scope, role assignments, ratings and simulated progress are not historical claims. It uses one consistent set of acceptance criteria, milestones and RAID IDs.
