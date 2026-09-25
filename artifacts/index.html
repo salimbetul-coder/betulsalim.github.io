@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#4361ee" />
+  <title>Betül Salim | PM Artifact Pack</title>
+  <meta name="description" content="Four clearly labeled Lurentra portfolio examples: Project Charter, RACI Matrix, RAID Log and Weekly Status Report." />
+  <meta property="og:title" content="Betül Salim | PM Artifact Pack" />
+  <meta property="og:description" content="Four clearly labeled Lurentra portfolio examples: Project Charter, RACI Matrix, RAID Log and Weekly Status Report." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://salimbetul-coder.github.io/betulsalim.github.io/artifacts/" />
+
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="Betül Salim | PM Artifact Pack" />
+  <meta name="twitter:description" content="Four clearly labeled Lurentra portfolio examples: Project Charter, RACI Matrix, RAID Log and Weekly Status Report." />
+
+<link rel="canonical" href="https://salimbetul-coder.github.io/betulsalim.github.io/artifacts/" />
+  <script>
+    (function () {
+      try {
+        const savedTheme = localStorage.getItem('portfolio-theme');
+        const systemDark = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches;
+        document.documentElement.dataset.theme = savedTheme || (systemDark ? 'dark' : 'light');
+      } catch (error) {
+        document.documentElement.dataset.theme = 'light';
+      }
+    })();
+  </script>
+  <style>
+    :root {
+      --primary:#4361ee;
+      --secondary:#3f37c9;
+      --accent:#ff7a59;
+      --mint:#72d6c9;
+      --yellow:#f6c85f;
+      --bg:#f8f9fe;
+      --surface:#ffffff;
+      --text:#2b2d42;
+      --subtext:#737a96;
+      --line:#e6e9f4;
+      --soft-blue:#edf1ff;
+      --soft-coral:#fff0eb;
+      --soft-mint:#ecfbf8;
+      --soft-yellow:#fff8df;
+      --shadow:0 20px 60px rgba(67,97,238,.10);
+      --shadow-soft:0 10px 30px rgba(43,45,66,.07);
+      --radius-xl:34px;
+      --radius-lg:24px;
+      --radius-md:18px;
+      --maxw:1220px;
+    }
+
+    :root[data-theme="dark"] {
+      --primary:#8ea4ff;
+      --secondary:#7567f2;
+      --accent:#ff9a7d;
+      --mint:#62d7c8;
+      --yellow:#f2c961;
+      --bg:#111421;
+      --surface:#191d2d;
+      --text:#f4f6ff;
+      --subtext:#adb4ce;
+      --line:#2c3247;
+      --soft-blue:#222b51;
+      --soft-coral:#3b2728;
+      --soft-mint:#173a38;
+      --soft-yellow:#3b3420;
+      --shadow:0 22px 65px rgba(0,0,0,.34);
+      --shadow-soft:0 12px 34px rgba(0,0,0,.24);
+    }
+
+    *{box-sizing:border-box}
+    html{scroll-behavior:smooth;scroll-padding-top:90px}
+    body{
+      margin:0;
+      background:
+        radial-gradient(circle at 10% 0%, rgba(67,97,238,.10), transparent 26%),
+        radial-gradient(circle at 95% 10%, rgba(255,122,89,.09), transparent 24%),
+        var(--bg);
+      color:var(--text);
+      font-family:Inter,ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;
+      line-height:1.65;
+      overflow-x:hidden;
+    }
+    a{color:inherit;text-decoration:none}
+    img{max-width:100%;display:block}
+    button{font:inherit}
+
+    .container{width:min(var(--maxw),calc(100% - 32px));margin:0 auto}
+
+    .nav{
+      position:sticky;top:0;z-index:50;
+      background:rgba(248,249,254,.88);
+      backdrop-filter:blur(16px);
+      border-bottom:1px solid rgba(230,233,244,.85);
+    }
+    :root[data-theme="dark"] .nav{background:rgba(17,20,33,.88);border-bottom-color:rgba(44,50,71,.9)}
+    .nav-inner{min-height:76px;display:flex;align-items:center;justify-content:space-between;gap:24px}
+    .brand{display:flex;align-items:center;gap:12px;font-weight:900;letter-spacing:-.03em;font-size:1.08rem}
+    .brand-badge{width:36px;height:36px;border-radius:12px;background:linear-gradient(135deg,var(--primary),var(--secondary));display:grid;place-items:center;color:white;box-shadow:0 10px 24px rgba(67,97,238,.28)}
+    .nav-links{display:flex;gap:18px;flex-wrap:wrap;color:var(--subtext);font-size:.93rem;font-weight:700}
+    .nav-links a:hover{color:var(--primary)}
+    .theme-toggle{display:inline-flex;align-items:center;gap:8px;border:1px solid var(--line);background:var(--surface);color:var(--text);border-radius:999px;padding:9px 13px;font-weight:800;cursor:pointer;box-shadow:var(--shadow-soft)}
+    .theme-toggle:hover{transform:translateY(-1px)}
+
+    .hero{padding:58px 0 32px}
+    .hero-grid{display:grid;grid-template-columns:minmax(0,1.08fr) minmax(360px,.92fr);gap:24px;align-items:center}
+    .hero-copy{padding:18px 0}
+    .eyebrow{display:inline-flex;align-items:center;gap:9px;padding:8px 13px;border-radius:999px;background:var(--soft-blue);color:var(--primary);font-size:.82rem;font-weight:850;letter-spacing:.06em;text-transform:uppercase}
+    .eyebrow::before{content:"";width:8px;height:8px;border-radius:50%;background:var(--accent)}
+    h1,h2,h3,h4,p{margin-top:0}
+    h1{font-size:clamp(3rem,6vw,6.2rem);line-height:.94;letter-spacing:-.075em;margin:22px 0 20px;max-width:760px}
+    .hero-highlight{color:var(--primary)}
+    .hero-text{font-size:1.08rem;color:var(--subtext);max-width:720px;margin-bottom:0}
+    .hero-actions{display:flex;gap:12px;flex-wrap:wrap;margin-top:28px}
+    .btn{display:inline-flex;align-items:center;justify-content:center;min-height:50px;padding:12px 18px;border-radius:14px;font-weight:800;border:1px solid transparent;transition:.2s ease}
+    .btn:hover{transform:translateY(-2px)}
+    .btn-primary{background:linear-gradient(135deg,var(--primary),var(--secondary));color:white;box-shadow:0 12px 28px rgba(67,97,238,.24)}
+    .btn-secondary{background:var(--surface);border-color:var(--line);color:var(--text);box-shadow:var(--shadow-soft)}
+
+    section{padding:54px 0 10px}
+    .section-head{display:grid;grid-template-columns:minmax(0,.72fr) minmax(280px,1.28fr);gap:24px;align-items:end;margin-bottom:24px}
+    .section-kicker{text-transform:uppercase;letter-spacing:.12em;color:var(--accent);font-size:.76rem;font-weight:850}
+    .section-head h2{font-size:clamp(2.1rem,3.6vw,3.5rem);line-height:1.05;letter-spacing:-.055em;margin:8px 0 0}
+    .section-head p{color:var(--subtext);margin-bottom:0}
+
+    .impact-grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:16px}
+    .impact-card{background:var(--surface);border:1px solid var(--line);border-radius:22px;padding:22px;box-shadow:var(--shadow-soft);transition:.2s ease}
+    .impact-card:hover{transform:translateY(-4px);box-shadow:var(--shadow)}
+    .impact-icon{width:46px;height:46px;border-radius:15px;display:grid;place-items:center;font-size:1.15rem;font-weight:900;margin-bottom:17px}
+    .i-blue{background:var(--soft-blue);color:var(--primary)}.i-coral{background:var(--soft-coral);color:var(--accent)}.i-mint{background:var(--soft-mint);color:#2ba997}.i-yellow{background:var(--soft-yellow);color:#c8961c}
+    .impact-card h3{font-size:1.12rem;line-height:1.3;margin-bottom:8px}.impact-card p{color:var(--subtext);font-size:.94rem;margin-bottom:0}
+
+    .experience-list{display:grid;gap:15px}
+    .experience-item{background:var(--surface);border:1px solid var(--line);border-radius:22px;padding:24px;box-shadow:var(--shadow-soft);display:grid;grid-template-columns:180px minmax(0,1fr);gap:22px}
+    .exp-date{color:var(--primary);font-size:.78rem;font-weight:850;text-transform:uppercase;letter-spacing:.08em}.exp-role{font-size:1.22rem;font-weight:900;line-height:1.25;margin-top:7px}.exp-company{color:var(--subtext);font-weight:700;margin-top:5px}
+    .experience-item ul{margin:0;padding-left:20px;color:var(--text)}.experience-item li+li{margin-top:8px}
+
+    .project-list{display:grid;gap:26px}
+    .project-row{display:grid;grid-template-columns:minmax(0,.88fr) minmax(0,1.12fr);gap:24px;align-items:center;background:var(--surface);border:1px solid var(--line);border-radius:30px;padding:28px;box-shadow:var(--shadow-soft)}
+    .project-row.reverse{grid-template-columns:minmax(0,1.12fr) minmax(0,.88fr)}
+    .project-copy{padding:10px}.project-type{text-transform:uppercase;letter-spacing:.12em;color:var(--primary);font-size:.76rem;font-weight:850}.project-copy h3{font-size:1.8rem;line-height:1.1;letter-spacing:-.04em;margin:9px 0 12px}.project-copy p{color:var(--subtext)}
+    .project-points{display:grid;gap:10px;margin-top:16px}.project-point{display:flex;gap:10px;align-items:flex-start}.project-point::before{content:"✓";color:var(--accent);font-weight:900}
+    .stack-line{margin-top:18px;font-size:.9rem;font-weight:800;color:var(--text)}
+
+    .privacy-note{margin-top:24px;display:flex;gap:14px;align-items:flex-start;background:var(--soft-mint);border:1px solid rgba(114,214,201,.36);padding:18px 20px;border-radius:18px;color:var(--text)}
+    .privacy-icon{width:36px;height:36px;flex:0 0 36px;border-radius:12px;background:var(--mint);display:grid;place-items:center;color:#176d65;font-weight:900}.privacy-note strong{display:block;margin-bottom:4px}.privacy-note p{margin:0;color:var(--subtext);font-size:.92rem}
+
+    .contact-cta{background:linear-gradient(135deg,var(--primary),var(--secondary));color:white;border-radius:34px;padding:42px;display:grid;grid-template-columns:minmax(0,1fr) minmax(280px,.9fr);gap:26px;align-items:center;box-shadow:0 24px 60px rgba(67,97,238,.26)}
+    .contact-cta h2{font-size:clamp(2rem,3.8vw,3.5rem);line-height:1.05;letter-spacing:-.055em;margin-bottom:12px}.contact-cta p{opacity:.82;margin-bottom:0}.contact-links{display:grid;gap:10px}.contact-link{min-height:60px;background:white;color:#20233a;border-radius:15px;padding:15px 18px;font-weight:850;display:flex;align-items:center;justify-content:center;transition:.2s ease;text-align:center}.contact-link:hover{transform:translateY(-2px);box-shadow:0 12px 28px rgba(0,0,0,.16)}
+    .contact-link-content{display:flex;flex-direction:column;gap:2px}.contact-link-content small{font-size:.76rem;font-weight:700;color:#737a96}
+    .toast{position:fixed;right:22px;bottom:22px;z-index:100;background:var(--text);color:var(--surface);border:1px solid var(--line);border-radius:14px;padding:12px 16px;box-shadow:var(--shadow);font-weight:800;opacity:0;transform:translateY(12px);pointer-events:none;transition:.2s ease;max-width:min(360px,calc(100vw - 32px))}.toast.show{opacity:1;transform:translateY(0)}
+
+    footer{padding:38px 0 60px;text-align:center;color:var(--subtext);font-size:.9rem}
+
+    @media(max-width:1050px){.hero-grid,.section-head,.experience-shell,.project-row,.project-row.reverse,.contact-cta{grid-template-columns:1fr}.experience-side{position:static}.impact-grid{grid-template-columns:repeat(2,1fr)}.project-row.reverse .mockup{order:2}.project-row.reverse .project-copy{order:1}}
+    @media(max-width:760px){.nav-inner{flex-direction:column;align-items:flex-start;padding:14px 0}.nav-links{gap:11px 14px}.hero{padding-top:34px}.hero-visual{min-height:430px}.code-window{inset:40px 0 55px 22px}.floating-card{transform:scale(.9)}.fc-one{right:-12px}.impact-grid,.metric-row,.flow{grid-template-columns:1fr}.experience-item{grid-template-columns:1fr}.project-row,.contact-cta{padding:21px}.mockup{min-height:auto}.contact-cta{padding:28px}.contact-link{min-height:56px}}
+    @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*::before,*::after{transition-duration:.01ms!important;animation-duration:.01ms!important;animation-iteration-count:1!important}}
+
+    :root{--subtext:#59617b}
+    .skip-link{position:absolute;left:16px;top:-80px;z-index:100;padding:12px;background:var(--surface);color:var(--text)}
+    .skip-link:focus{top:8px}
+    a:focus-visible,button:focus-visible,summary:focus-visible{outline:3px solid var(--accent);outline-offset:5px}
+    .nav-links{align-items:center}
+    .hero-grid{grid-template-columns:minmax(0,1.15fr) minmax(0,.85fr)}
+    h1{font-size:clamp(2.8rem,5.5vw,5.3rem);line-height:1.04;letter-spacing:-.06em}
+    .hero-note{font-size:.86rem;color:var(--subtext);margin:18px 0 0}
+    .delivery-board{background:var(--surface);border:1px solid var(--line);border-radius:28px;padding:28px;box-shadow:var(--shadow)}
+    .board-heading{display:flex;justify-content:space-between;gap:15px;align-items:center;padding-bottom:18px;border-bottom:1px solid var(--line)}
+    .board-heading strong{font-size:1.1rem}.board-heading span{font-size:.76rem;color:var(--primary);background:var(--soft-blue);padding:5px 9px;border-radius:8px}
+    .delivery-steps{list-style:none;padding:0;margin:22px 0;display:grid;gap:20px}
+    .delivery-steps li{display:grid;grid-template-columns:36px 1fr;gap:13px}
+    .step-number{width:36px;height:36px;border-radius:12px;background:var(--soft-blue);color:var(--primary);display:grid;place-items:center;font-weight:850}
+    .delivery-steps strong{display:block}.delivery-steps p{font-size:.9rem;color:var(--subtext);margin:3px 0 0}
+    .board-footer{border-top:1px solid var(--line);padding-top:17px;font-size:.83rem;color:var(--subtext)}
+    .metric-number{font-size:2.4rem;font-weight:900;letter-spacing:-.04em;color:var(--primary);line-height:1.2;margin-bottom:12px}
+    .project-row,.project-row.reverse{align-items:start;grid-template-columns:minmax(0,1fr) minmax(0,1fr)}
+    .case-panel{background:var(--soft-blue);border-radius:22px;padding:25px;height:100%}
+    .case-panel.mint{background:var(--soft-mint)}.case-panel.coral{background:var(--soft-coral)}
+    .case-panel h4{font-size:.76rem;letter-spacing:.1em;text-transform:uppercase;color:var(--subtext);margin:0 0 10px}
+    .case-panel ul{padding-left:20px;margin:0 0 22px}.case-panel li+li{margin-top:9px}
+    .case-result{border-top:1px solid var(--line);padding-top:17px;margin:0}
+    .case-meta{font-size:.83rem;color:var(--subtext);margin-bottom:18px}
+    details{margin-top:20px;border-top:1px solid var(--line);padding-top:16px}
+    summary{cursor:pointer;color:var(--primary);font-weight:800}
+    details p{margin:12px 0 0;font-size:.92rem}
+    .approach-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:16px}
+    .approach-grid article{padding:25px;border:1px solid var(--line);border-radius:22px;background:var(--surface)}
+    .approach-grid h3{font-size:1.15rem}.approach-grid p{color:var(--subtext);margin:0;font-size:.95rem}
+    .foundation{margin-top:22px;padding:24px;border-radius:22px;background:var(--soft-blue)}
+    .foundation p{margin:8px 0 0;color:var(--subtext)}
+    .experience-item{grid-template-columns:210px minmax(0,1fr)}
+    .education{margin-top:22px;color:var(--subtext)}
+    .btn-primary,.experience-side,.contact-cta{background:linear-gradient(135deg,#4361ee,#3f37c9)}
+    .brand-badge{background:linear-gradient(135deg,#4361ee,#3f37c9)}
+    @media(max-width:1050px){.hero-grid,.project-row,.project-row.reverse{grid-template-columns:1fr}}
+    @media(max-width:760px){html{scroll-padding-top:180px}.approach-grid,.experience-item{grid-template-columns:1fr}.nav-inner{gap:12px}.nav-links{font-size:.84rem}.nav-links a{padding:5px 0}.delivery-board{padding:22px}.eyebrow{font-size:.66rem;letter-spacing:.035em}.project-copy{padding:0}.case-panel{padding:20px}.hero-actions .btn{flex:1 1 160px}.contact-link{overflow-wrap:anywhere}.section-head{gap:14px}}
+
+
+    .hero-copy h1{font-size:clamp(2.6rem,4.5vw,4.6rem);line-height:1.07}
+    .case-detail{margin:20px 0 0}.case-detail dt{font-size:.84rem;font-weight:850;color:var(--text);margin-top:17px}.case-detail dd{font-size:.93rem;color:var(--subtext);margin:5px 0 0}
+    .artifact-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:18px}.artifact-card{padding:26px;border:1px solid var(--line);border-radius:24px;background:var(--surface);display:flex;flex-direction:column;align-items:flex-start}.artifact-card h3{margin:16px 0 10px}.artifact-card p{color:var(--subtext);flex:1}.artifact-number{font-weight:900;color:var(--primary);background:var(--soft-blue);padding:6px 11px;border-radius:10px}.sample-note{padding:20px 24px;border-left:4px solid var(--primary);background:var(--soft-blue);border-radius:0 16px 16px 0;color:var(--subtext);margin-bottom:22px}.sample-note strong{color:var(--text)}
+    .foundation h2{font-size:1.3rem;margin-bottom:8px}#technical-foundation{padding-top:24px}
+    @media(max-width:760px){.artifact-grid{grid-template-columns:1fr}.nav{position:static}html{scroll-padding-top:20px}.hero-copy h1{font-size:clamp(2.5rem,9vw,3.4rem)}}
+  
+ .artifact-intro{padding:50px 0 20px}.artifact-intro h1{font-size:clamp(2.4rem,5vw,4rem);max-width:900px}.artifact-intro p{max-width:850px;color:var(--subtext)}.doc-nav{display:flex;gap:10px;flex-wrap:wrap;margin:20px 0}.document{padding:32px;background:var(--surface);border:1px solid var(--line);border-radius:24px;margin:26px 0}.document-top{display:flex;justify-content:space-between;gap:18px;align-items:start}.document h2{font-size:2rem;line-height:1.2;margin:8px 0}.document h3{margin:28px 0 10px}.document p,.document li{color:var(--subtext)}.document li+li{margin-top:8px}.table-scroll{overflow-x:auto;margin:24px 0;border:1px solid var(--line);border-radius:12px}.table-scroll:focus-visible{outline:3px solid var(--primary);outline-offset:3px}table{border-collapse:collapse;width:100%;min-width:660px;font-size:.92rem}caption{text-align:left;padding:14px;background:var(--soft-blue);color:var(--text);font-weight:700}th,td{text-align:left;vertical-align:top;padding:14px;border-bottom:1px solid var(--line);overflow-wrap:anywhere}thead{background:var(--bg)}tbody th{min-width:115px}td{color:var(--subtext)}.back-top{display:inline-block;margin-top:16px;color:var(--primary);font-weight:700}
+ @media(max-width:760px){.document{padding:20px}.document-top{flex-direction:column}.document h2{font-size:1.65rem}.artifact-intro{padding-top:25px}}
+ @media print{html{scroll-behavior:auto}:root,:root[data-theme="dark"]{--text:#111;--subtext:#333;--surface:#fff;--bg:#fff;--line:#ccc;--soft-blue:#f0f2f7;--primary:#263b8c}body{background:#fff!important;color:#111;font-size:10pt}.nav,.skip-link,.doc-nav,.hero-actions,.document-top>a,.back-top,footer{display:none!important}.container{width:100%;max-width:none}.artifact-intro{padding:0}.artifact-intro h1{font-size:26pt}.document{border:0;border-radius:0;padding:0;break-before:page}.document h2{font-size:22pt}.document h3{break-after:avoid}.document-top{display:block}.sample-note{padding:12px}.table-scroll{overflow:visible;border:0}table{min-width:0;font-size:9pt;table-layout:fixed}th,td{padding:7px;min-width:0!important}tr{break-inside:avoid}thead{display:table-header-group}@page{size:A4;margin:15mm}}
+
+ .table-hint{display:none}@media(max-width:760px){.table-hint{display:block;font-size:.8rem}}@media print{.table-hint{display:none}}
+ </style>
+</head>
+<body><a class="skip-link" href="#artifact-top">Skip to documents</a><nav class="nav" aria-label="Artifact navigation"><div class="container nav-inner"><a class="brand" href="../index.html"><span class="brand-badge" aria-hidden="true">BS</span>Betül Salim</a><div class="nav-links"><a href="../index.html#artifacts">← Portfolio</a><button class="theme-toggle" id="theme-toggle" type="button" aria-label="Switch theme" aria-pressed="false"><span class="theme-icon" aria-hidden="true">☾</span><span class="theme-label">Dark</span></button></div></div></nav><main class="container"><header class="artifact-intro" id="artifact-top"><div class="eyebrow">Lurentra · Portfolio worked examples</div><h1>From scope to<br><span class="hero-highlight">a clear status update.</span></h1><p>Four connected documents for a proposed spreadsheet-analytics pilot. The same acceptance criteria, milestone gates and RAID IDs are carried through the pack so a reviewer can follow the decisions.</p><p><strong>Reading guide:</strong> the case study on the main site summarizes experience. This pack is a new portfolio exercise, not evidence that these documents were used on a past project.</p><nav class="doc-nav" aria-label="Document sections"><a class="btn btn-secondary" href="#charter">Project Charter</a><a class="btn btn-secondary" href="#raci">RACI Matrix</a><a class="btn btn-secondary" href="#raid">RAID Log</a><a class="btn btn-secondary" href="#status">Weekly Status Report</a></nav><div class="hero-actions"><button class="btn btn-primary" type="button" onclick="window.print()">Print / save pack as PDF</button></div></header><section class="document" id="charter" aria-labelledby="charter-title"><div class="document-top"><div><span class="section-kicker">Portfolio worked example</span><h2 id="charter-title">Project Charter</h2><p>Proposed Lurentra pilot · Draft for discussion</p></div><a class="btn btn-secondary" href="charter.md" download>Download Markdown ↓</a></div><p class="sample-note">PORTFOLIO WORKED EXAMPLE — Prepared September 2026. Based on Lurentra product context. Proposed plans, roles, ratings and simulated status are illustrative, not approved or historical project records.</p><p>Purpose: demonstrate how a business can turn a spreadsheet of sales and collections data into understandable metrics, with transparent validation and reliable outputs.</p><h3>Context and authority</h3><p>Known context: Lurentra is a B2B sales and collections analytics product. Betül’s documented responsibilities include scope, priorities, acceptance criteria and release readiness. This charter proposes a future pilot; sponsor approval, reviewer availability, budget and dates remain unconfirmed.</p><h3>Pilot scope</h3><ul><li>In scope: one agreed input template; upload and column mapping; validation feedback; agreed sales and overdue-collections metrics; a management summary and CSV/PDF outputs.</li><li>Out of scope for this example: live ERP integrations, automated collection actions, multi-company rollout, custom model training and paid production onboarding.</li><li>Change control: record the request, business reason, delivery impact and acceptance changes. The project lead decides whether to replace existing scope or defer the request.</li></ul><h3>Proposed acceptance criteria</h3><p class="table-hint">On a small screen, swipe the table horizontally to see every column.</p><div class="table-scroll" role="region" aria-label="Project Charter table" tabindex="0"><table><caption>Project Charter — Proposed Lurentra pilot · Draft for discussion</caption><thead><tr><th scope="col">ID</th><th scope="col">Acceptance criterion</th><th scope="col">Evidence</th></tr></thead><tbody><tr><th scope="row">AC-01</th><td>A valid agreed sample file completes the upload-to-report flow.</td><td>Recorded walkthrough with synthetic data.</td></tr><tr><th scope="row">AC-02</th><td>Missing required fields and invalid values produce actionable validation feedback.</td><td>Negative-case checklist.</td></tr><tr><th scope="row">AC-03</th><td>Agreed metrics reconcile to an independently checked reference dataset.</td><td>SQL/Excel reconciliation with zero unexplained differences.</td></tr><tr><th scope="row">AC-04</th><td>Outputs contain the agreed metrics and match the validated calculation results.</td><td>Export comparison checklist.</td></tr><tr><th scope="row">AC-05</th><td>No unresolved critical blocker remains in the agreed pilot flow.</td><td>Defect review and recorded go/no-go decision.</td></tr></tbody></table></div><h3>Proposed milestone sequence</h3><p class="table-hint">On a small screen, swipe the table horizontally to see every column.</p><div class="table-scroll" role="region" aria-label="Project Charter table" tabindex="0"><table><caption>Project Charter — Proposed Lurentra pilot · Draft for discussion</caption><thead><tr><th scope="col">Gate</th><th scope="col">Deliverable</th><th scope="col">Exit condition</th></tr></thead><tbody><tr><th scope="row">M1 · Define</th><td>Scope and reference dataset</td><td>Project lead records scope; reviewer confirms metric definitions.</td></tr><tr><th scope="row">M2 · Validate</th><td>Working pilot flow and test evidence</td><td>AC-01 to AC-04 verified; issues logged.</td></tr><tr><th scope="row">M3 · Review</th><td>Demo, feedback and release decision</td><td>AC-05 met; reviewer feedback and decision recorded.</td></tr></tbody></table></div><h3>Ownership and constraints</h3><p>The founder holds project-lead, engineering and QA responsibilities in this example; these are separate responsibilities, not a claim of separate staff. A business reviewer is a proposed pilot participant, not a confirmed customer. Reviewer availability and independent business validation are dependencies. No budget or delivery date is committed.</p><h3>Approval status</h3><p>Draft / not approved. The project lead would record the approver, decision date, scope version and any conditions before committing the pilot baseline.</p><a class="back-top" href="#artifact-top">Back to document navigation ↑</a></section><section class="document" id="raci" aria-labelledby="raci-title"><div class="document-top"><div><span class="section-kicker">Portfolio worked example</span><h2 id="raci-title">RACI Matrix</h2><p>Proposed responsibilities · Same pilot scope as the charter</p></div><a class="btn btn-secondary" href="raci.md" download>Download Markdown ↓</a></div><p class="sample-note">PORTFOLIO WORKED EXAMPLE — Prepared September 2026. Based on Lurentra product context. Proposed plans, roles, ratings and simulated status are illustrative, not approved or historical project records.</p><p>R = Responsible for doing the work; A = Accountable for the decision or result; C = Consulted; I = Informed. Each activity has one accountable role. A/R means that role both owns and performs the activity.</p><h3>Roles and assumptions</h3><ul><li>PL: Project lead / founder — scope, priorities, decisions and communication.</li><li>ENG: Engineering responsibility — implementation and technical investigation.</li><li>QA: Validation responsibility — checks and release evidence.</li><li>BR: Business reviewer — proposed pilot participant; not yet confirmed.</li><li>For this solo-founder example, PL, ENG and QA are held by Betül. This is a responsibility model, not an organization chart or evidence of a staffed team. Business validation remains a proposed external dependency.</li></ul><p class="table-hint">On a small screen, swipe the table horizontally to see every column.</p><div class="table-scroll" role="region" aria-label="RACI Matrix table" tabindex="0"><table><caption>RACI Matrix — Proposed responsibilities · Same pilot scope as the charter</caption><thead><tr><th scope="col">Activity</th><th scope="col">PL</th><th scope="col">ENG</th><th scope="col">QA</th><th scope="col">BR</th></tr></thead><tbody><tr><th scope="row">Define scope and acceptance criteria</th><td>A/R</td><td>C</td><td>C</td><td>C</td></tr><tr><th scope="row">Prepare reference data and metric definitions</th><td>A</td><td>R</td><td>C</td><td>C</td></tr><tr><th scope="row">Implement the agreed pilot flow</th><td>A</td><td>R</td><td>C</td><td>I</td></tr><tr><th scope="row">Execute validation and log issues</th><td>A</td><td>C</td><td>R</td><td>C</td></tr><tr><th scope="row">Assess a scope-change request</th><td>A/R</td><td>C</td><td>C</td><td>C</td></tr><tr><th scope="row">Decide pilot readiness</th><td>A/R</td><td>C</td><td>C</td><td>C</td></tr><tr><th scope="row">Communicate weekly status</th><td>A/R</td><td>C</td><td>C</td><td>I</td></tr></tbody></table></div><h3>How I would use it</h3><p>Review role assignments at kickoff and whenever scope or availability changes. Confirm the business reviewer before scheduling the pilot review. If no reviewer is available, record that limitation and hold the business-validation gate rather than claiming sign-off.</p><a class="back-top" href="#artifact-top">Back to document navigation ↑</a></section><section class="document" id="raid" aria-labelledby="raid-title"><div class="document-top"><div><span class="section-kicker">Portfolio worked example</span><h2 id="raid-title">RAID Log</h2><p>Worked example · All entries and ratings are illustrative</p></div><a class="btn btn-secondary" href="raid.md" download>Download Markdown ↓</a></div><p class="sample-note">PORTFOLIO WORKED EXAMPLE — Prepared September 2026. Based on Lurentra product context. Proposed plans, roles, ratings and simulated status are illustrative, not approved or historical project records.</p><p>This is a simulated register for the proposed pilot. It is not a report of current Lurentra defects or project health. IDs are reused in the sample weekly status report. Risk scale: likelihood and impact are Low, Medium or High; ratings support discussion, not a statistical forecast.</p><p class="table-hint">On a small screen, swipe the table horizontally to see every column.</p><div class="table-scroll" role="region" aria-label="RAID Log table" tabindex="0"><table><caption>RAID Log — Worked example · All entries and ratings are illustrative</caption><thead><tr><th scope="col">ID / type</th><th scope="col">Example entry</th><th scope="col">Rating / status</th><th scope="col">Owner</th><th scope="col">Next action / review gate</th></tr></thead><tbody><tr><th scope="row">R-01 · Risk</th><td>Input formats may differ from the agreed pilot template.</td><td>Likelihood Medium / Impact High · Open</td><td>ENG</td><td>Add malformed-file checks and freeze pilot template at M1.</td></tr><tr><th scope="row">R-02 · Risk</th><td>Additional integration requests may expand pilot scope.</td><td>Likelihood Medium / Impact High · Open</td><td>PL</td><td>Use change requests; defer live ERP integration unless scope is re-approved. Review at each scope change.</td></tr><tr><th scope="row">A-01 · Assumption</th><td>A reviewer can validate metric definitions using synthetic or authorized sample data.</td><td>Unvalidated</td><td>PL</td><td>Confirm reviewer and permitted data before M1 exit. If false, hold baseline approval.</td></tr><tr><th scope="row">I-01 · Issue</th><td>In this simulated scenario, a negative-input check has unclear validation feedback.</td><td>Medium severity · Open</td><td>ENG</td><td>Improve the feedback; QA retests AC-02 before M2 exit.</td></tr><tr><th scope="row">D-01 · Dependency</th><td>Business review requires agreed metric definitions and reviewer availability.</td><td>Awaiting confirmation</td><td>PL</td><td>Agree reviewer, definitions and review slot before M2 exit. Escalate to PL if not confirmed.</td></tr></tbody></table></div><h3>Review and escalation</h3><ul><li>Review open entries at each milestone and before the weekly update. Record evidence when closing an item.</li><li>An issue is an observed problem within the sample scenario; a risk is a possible future event. Keep them distinct.</li><li>If AC-01 to AC-04 cannot be evidenced, hold M2. If a critical blocker remains, hold M3. Do not mark a milestone complete to preserve the plan.</li><li>For this solo-founder model, escalation means an explicit scope, sequencing or go/no-go decision by the project lead, documented for the reviewer.</li></ul><a class="back-top" href="#artifact-top">Back to document navigation ↑</a></section><section class="document" id="status" aria-labelledby="status-title"><div class="document-top"><div><span class="section-kicker">Portfolio worked example</span><h2 id="status-title">Weekly Status Report</h2><p>Simulated Week 1 · Illustrative reporting, not historical progress</p></div><a class="btn btn-secondary" href="status.md" download>Download Markdown ↓</a></div><p class="sample-note">PORTFOLIO WORKED EXAMPLE — Prepared September 2026. Based on Lurentra product context. Proposed plans, roles, ratings and simulated status are illustrative, not approved or historical project records.</p><p>Scenario: a hypothetical pilot at M1 definition review. The reported activities below are fictional example progress; no real delivery date, approved budget, customer commitment or actual project-health status is asserted.</p><h3>Overall status: AMBER — decision needed</h3><p>Scope and the reference-data approach have been drafted in this scenario. M1 remains open because reviewer availability and metric definitions have not been confirmed (A-01). M2 validation and M3 pilot review are not complete.</p><p class="table-hint">On a small screen, swipe the table horizontally to see every column.</p><div class="table-scroll" role="region" aria-label="Weekly Status Report table" tabindex="0"><table><caption>Weekly Status Report — Simulated Week 1 · Illustrative reporting, not historical progress</caption><thead><tr><th scope="col">Area</th><th scope="col">Example status</th><th scope="col">Reason / action</th></tr></thead><tbody><tr><th scope="row">Scope</th><td>Draft</td><td>Proposed charter prepared; business review pending.</td></tr><tr><th scope="row">Schedule</th><td>Not baselined</td><td>Reviewer availability is unconfirmed (D-01); no committed deadline.</td></tr><tr><th scope="row">Quality</th><td>Open issue</td><td>Sample I-01 needs clearer validation feedback and an AC-02 retest.</td></tr><tr><th scope="row">Budget</th><td>Not baselined</td><td>No approved budget is assumed for this example.</td></tr></tbody></table></div><h3>Example progress this week</h3><ul><li>Prepared a draft charter and listed AC-01 to AC-05 for review.</li><li>Mapped delivery responsibilities in the draft RACI.</li><li>Recorded R-01, R-02, A-01, I-01 and D-01 in the sample RAID log.</li></ul><h3>Next actions</h3><p class="table-hint">On a small screen, swipe the table horizontally to see every column.</p><div class="table-scroll" role="region" aria-label="Weekly Status Report table" tabindex="0"><table><caption>Weekly Status Report — Simulated Week 1 · Illustrative reporting, not historical progress</caption><thead><tr><th scope="col">Action</th><th scope="col">Owner</th><th scope="col">Needed by</th></tr></thead><tbody><tr><th scope="row">Confirm reviewer and metric definitions; resolve A-01</th><td>PL</td><td>Before M1 exit</td></tr><tr><th scope="row">Clarify validation feedback for I-01 and retest AC-02</th><td>ENG / QA</td><td>Before M2 exit</td></tr><tr><th scope="row">Check format variations under R-01</th><td>ENG / QA</td><td>Before M2 exit</td></tr><tr><th scope="row">Agree a review slot for D-01</th><td>PL</td><td>Before M2 exit</td></tr></tbody></table></div><h3>Decision requested</h3><p>Project lead to choose whether to proceed with the limited spreadsheet pilot or revise scope through a change request. Live ERP integration remains out of scope. Record the decision and the accepted scope version before committing the baseline.</p><h3>Next update</h3><p>Update at the next weekly review or sooner if an acceptance gate is blocked. Report what changed, the evidence, the owner and the decision needed.</p><a class="back-top" href="#artifact-top">Back to document navigation ↑</a></section></main><footer>Betül Salim · PM Artifact Pack · Portfolio examples · September 2026</footer>  <script>
+    (function () {
+      const root = document.documentElement;
+      const button = document.getElementById('theme-toggle');
+      const icon = button.querySelector('.theme-icon');
+      const label = button.querySelector('.theme-label');
+      function applyTheme(theme) {
+        const isDark = theme === 'dark';
+        root.dataset.theme = isDark ? 'dark' : 'light';
+        button.setAttribute('aria-pressed', String(isDark));
+        button.setAttribute('aria-label', isDark ? 'Switch to light theme' : 'Switch to dark theme');
+        icon.textContent = isDark ? '☀' : '☾';
+        label.textContent = isDark ? 'Light' : 'Dark';
+        document.querySelector('meta[name="theme-color"]').setAttribute('content', isDark ? '#111421' : '#4361ee');
+      }
+      applyTheme(root.dataset.theme || 'light');
+      button.addEventListener('click', function () {
+        applyTheme(root.dataset.theme === 'dark' ? 'light' : 'dark');
+        try { localStorage.setItem('portfolio-theme', root.dataset.theme); } catch (error) {}
+      });
+    })();
+  </script>
+</body></html>
