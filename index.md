@@ -1,31 +1,13 @@
-# Betül Salim
+# Betül Salim — Project Management
 
-Backend & Product Data Engineer
+Project Management | Agile Delivery | Stakeholder Coordination
 
-I design backend architectures and operational analytics systems that transform complex workflows into measurable data-driven platforms.
+I clarify business requirements, coordinate technical dependencies and follow delivery through validation and release. My Computer Engineering and software development background supports my project management focus.
 
-## Focus Areas
+[Explore my portfolio](https://salimbetul-coder.github.io/betulsalim.github.io/) · [View my CV](assets/Betul_Salim_Project_Manager_CV.pdf)
 
-- Backend architecture
-- Operational reporting systems
-- Product analytics dashboards
-- Data-driven decision systems
+## Selected work
 
-## Technologies
-
-Python  
-Django  
-PostgreSQL  
-C#  
-.NET  
-React  
-Java  
-Node.js
-
-## Projects
-
-- Insurance Operations Reporting Platform
-- Field Usage Analyzer
-- Smart POS System
-
-Portfolio site powered by GitHub Pages
+- Field Tracking Platform — requirements and release coordination
+- Hasarlink — claims analytics requirements and output validation
+- Lurentra Insight — scope, priorities and release readiness
